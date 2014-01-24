@@ -13,6 +13,9 @@ import argparse
 
 parser = argparse.ArgumentParser(description='test a motor StopCode')
 
+parser.add_argument('file', metavar='fname', type=str,
+                   help='list with pseudomotor and physical motors composing' + 
+			            'it, to be tested: StopCode')   
 parser.add_argument('pos', metavar='pos', type=float, nargs='+', 
                    help='positions as list of floats')                   
 parser.add_argument('--mot', '--motor', type=str, default='motor/dummotctrl/7',
@@ -27,9 +30,41 @@ args = parser.parse_args()
 
 
 
-position_list = args.pos
+f = open(args.file, 'r')
+
+# The motor_list shall contain the pseudomotor as first motor in the list and 
+# all the physical motors listed after it.
+
+motors = f.readline()
+motors_list = motors.split()
+
+pseudomotor_name = motors_list[0]
+physical_motors_names = motors_list[1:]
+
+print('\nPseudomotor is: {0}'.format(pseudomotor_name))
+print('Physical motors are: {0}\n'.format(physical_motors_names))
+
+pseudomotor = PyTango.DeviceProxy(pseudomotor_name)
 
 
+
+physical_motors = []
+for i in range (0, len(physical_motors_names)):
+    physicalmot = PyTango.DeviceProxy(physical_motors_names[i])    
+    physical_motors.append(physicalmot)
+
+
+
+positions = f.readline()
+positions_str_list = positions.split()
+positions_list=[]
+for i in range (0, len(positions_str_list)):
+    positions_list.append(float(positions_str_list[i]))    
+   
+print('Positions to be reach for pseudo are: {0}\n'.format(positions_list))
+
+
+"""
 ########### Limits for CLEAR in bragg Pseudomotor ###########
 #Clear bragg pseudo must be limited (for the moment) to 50degrees and 73degrees.
 
@@ -51,7 +86,12 @@ if (args.c == True):
 
 print(position_list)
 
+# PseudoMotor
 motor = PyTango.DeviceProxy(args.mot)
+
+motor1 = PyTango.DeviceProxy(args.mot)
+motor2 = PyTango.DeviceProxy(args.mot)
+
 
 text_file = open("StopCodes.txt", "w")
 count = 0
@@ -95,5 +135,5 @@ for i in range(0, args.n):
 
 text_file.close()
 print('\n')
-
+"""
 

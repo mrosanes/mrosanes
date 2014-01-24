@@ -1,0 +1,6 @@
+pm/braggctrl_dum/1 motor/dummotctrl/8 motor/dummotctrl/8 motor/dummotctrl/8
+56.6 80 90.056
+
+# List motors separated by a single space:
+# Indicate the pseudomotor as first element.
+# Indicate the physical motors as second element, third element...
