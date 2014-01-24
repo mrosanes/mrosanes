@@ -17,8 +17,8 @@ import argparse
 parser = argparse.ArgumentParser(description='test a motor StopCode')
 
 parser.add_argument('file', metavar='fname', type=str,
-                   help='list with pseudomotor and physical motors composing' + 
-			            'it, to be tested: StopCode')   
+                   help='file with the list with pseudomotor and physical ' + 
+                    'motors composing the pseudo, to be tested: StopCode')   
 parser.add_argument('--n','--ntimes', type=int, default=1,
                    help='number of times that each position will be tested')
 parser.add_argument('--c','--clear', type=bool, default=False,

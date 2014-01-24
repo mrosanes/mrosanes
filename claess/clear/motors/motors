@@ -1,13 +1,15 @@
-pm/braggctrl/1 motor/icepaps_clearhome/6 motor/icepaps_clearhome/7 motor/icepaps_clearhome/11 motor/icepaps_clearhome/12 motor/icepaps_clearhome/13 motor/icepaps_clearhome/16 motor/dum_mot_ctrl/222 motor/dum_mot_ctrl/223
-56.6 60 61.335
+pm/braggctrl_dum/1 motor/dummotctrl/10 motor/dummotctrl/11 motor/dummotctrl/12
+56.6 57 58.25
+## Dummy Motors below
 
+
+
+
+#pm/braggctrl/1 motor/icepaps_clearhome/6 motor/icepaps_clearhome/7 motor/icepaps_clearhome/11 motor/icepaps_clearhome/12 motor/icepaps_clearhome/13 motor/icepaps_clearhome/16 motor/dum_mot_ctrl/222 motor/#dum_mot_ctrl/223
+#56.6 60 61.335
 ## Real motors above
 
 
-
-## Dummy Motors below
-## pm/braggctrl_dum/1 motor/dummotctrl/10 motor/dummotctrl/11 motor/dummotctrl/12
-## 56.6 57 58.25
 
 
 
