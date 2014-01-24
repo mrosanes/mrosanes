@@ -1,0 +1,36 @@
+
+Pseudomotor is: pm/braggctrl/1
+Physical motors are: ['motor/icepaps_clearhome/6', 'motor/icepaps_clearhome/7', 'motor/icepaps_clearhome/11', 'motor/icepaps_clearhome/12', 'motor/icepaps_clearhome/13', 'motor/icepaps_clearhome/16', 'motor/dum_mot_ctrl/222', 'motor/dum_mot_ctrl/223']
+Positions to be reach for pseudo are: [56.6, 60.0, 61.335]
+
+Position of pseudo at the beginning of the script is 57.5492982134:
+---------
+
+Positions: [56.6, 60.0, 61.335]
+StopCode at pseudoposition 56.600005733 for physicalmotor CLEAR_SLXROT_HOME is: End of movement
+StopCode at pseudoposition 56.600005733 for physicalmotor CLEAR_AYTRANS_HOME is: End of movement
+StopCode at pseudoposition 56.600005733 for physicalmotor CLEAR_DXROT_HOME is: End of movement
+StopCode at pseudoposition 56.600005733 for physicalmotor CLEAR_DZTRANS_HOME is: End of movement
+StopCode at pseudoposition 56.600005733 for physicalmotor CLEAR_DYTRANS_HOME is: End of movement
+StopCode at pseudoposition 56.600005733 for physicalmotor CLEAR_AXROT_HOME is: End of movement
+StopCode at pseudoposition 56.600005733 for physicalmotor b1_dum_home is: StopCode does NOT exist for this motor
+StopCode at pseudoposition 56.600005733 for physicalmotor b2_dum_home is: StopCode does NOT exist for this motor
+
+StopCode at pseudoposition 60.0000062324 for physicalmotor CLEAR_SLXROT_HOME is: End of movement
+StopCode at pseudoposition 60.0000062324 for physicalmotor CLEAR_AYTRANS_HOME is: End of movement
+StopCode at pseudoposition 60.0000062324 for physicalmotor CLEAR_DXROT_HOME is: End of movement
+StopCode at pseudoposition 60.0000062324 for physicalmotor CLEAR_DZTRANS_HOME is: End of movement
+StopCode at pseudoposition 60.0000062324 for physicalmotor CLEAR_DYTRANS_HOME is: End of movement
+StopCode at pseudoposition 60.0000062324 for physicalmotor CLEAR_AXROT_HOME is: End of movement
+StopCode at pseudoposition 60.0000062324 for physicalmotor b1_dum_home is: StopCode does NOT exist for this motor
+StopCode at pseudoposition 60.0000062324 for physicalmotor b2_dum_home is: StopCode does NOT exist for this motor
+
+StopCode at pseudoposition 61.191038218 for physicalmotor CLEAR_SLXROT_HOME is: End of movement
+StopCode at pseudoposition 61.191038218 for physicalmotor CLEAR_AYTRANS_HOME is: End of movement
+StopCode at pseudoposition 61.191038218 for physicalmotor CLEAR_DXROT_HOME is: End of movement
+StopCode at pseudoposition 61.191038218 for physicalmotor CLEAR_DZTRANS_HOME is: End of movement
+StopCode at pseudoposition 61.191038218 for physicalmotor CLEAR_DYTRANS_HOME is: Settling timeout
+StopCode at pseudoposition 61.191038218 for physicalmotor CLEAR_AXROT_HOME is: Stop
+StopCode at pseudoposition 61.191038218 for physicalmotor b1_dum_home is: StopCode does NOT exist for this motor
+StopCode at pseudoposition 61.191038218 for physicalmotor b2_dum_home is: StopCode does NOT exist for this motor
+
