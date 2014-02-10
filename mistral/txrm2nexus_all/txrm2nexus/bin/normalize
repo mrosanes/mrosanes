@@ -1,0 +1,30 @@
+#!/usr/bin/python
+
+from txm2nexuslib import recons
+import argparse
+
+#normalize_tomo
+def main():
+    parser = argparse.ArgumentParser(description='Script used to normalize the tomography. The formula used is the next one: \nNormalizedTomographyImage[i] = TomographyImage[i]/(ratio[i]*Flatfield)')
+
+    parser.add_argument('inputfile', type=str, default=None,
+                   help='Enter hdf5 file which contains the information of both tomography and flatfield.')
+
+    parser.add_argument('-a', '--avgtomnorm', type=bool, default=0, 
+               help='Indicate if we want to obtain the average of the normalized images.')   
+                                  
+    args = parser.parse_args()
+    
+    normalized_object = recons.recons_normalize(args.inputfile, args.avgtomnorm)
+
+    # We reconstruct the tomography using the tomography images information, the FF (flatfield) images information, and the ratios that have to be used to multiply the FF: tomoimage[i]/(ratio[i]*FF)    
+    # The ratios are calculated thanks to the exposure times.
+    normalized_object.normalize_tomo()
+  
+if __name__ == "__main__":
+    main()
+
+
+
+
+
