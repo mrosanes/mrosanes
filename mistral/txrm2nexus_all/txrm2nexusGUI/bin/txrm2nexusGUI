@@ -1,0 +1,22 @@
+#!/usr/bin/python
+
+
+'''
+Created on Aug 13, 2013
+
+@author: mrosanes
+'''
+
+import sys
+from PyQt4 import QtGui
+from txrm_convert import convert
+   
+def main():
+  
+    app = QtGui.QApplication(sys.argv)
+    txrm2nexusGUI = convert.Convertion()
+    sys.exit(app.exec_())
+
+
+if __name__ == '__main__':
+    main()
